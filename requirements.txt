@@ -1,0 +1,6 @@
+flask
+flask-cors
+PyMuPDF
+pdfminer.six
+transformers
+torch

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Creator</title>
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Adobe PDF Embed API -->
+   <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+
+
+    <!-- Make Adobe Client ID available to JS -->
+    <script>
+      window.ADOBE_CLIENT_ID = "ffb1206dbfbf404a82b6a6be431342e3"; // replace with your actual client ID
+    </script>
+  </head>
+
+  <script>
+    // Auto-reload during development
+    new EventSource('/esbuild').addEventListener('change', () =>
+      location.reload()
+    );
+  </script>
+
+  <body>
+    <div id="app"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
